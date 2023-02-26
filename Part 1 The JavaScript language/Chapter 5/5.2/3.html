@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./js/scripts.js" defer></script> -->
+    <!--defer - запускает код в js после прогрузки всей страницы-->
+
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function readNumber() {
+        let num;
+
+        do {
+          num = prompt("Введите число", 0);
+        } while (!isFinite(num));
+
+        if (num === null || num === "") {
+          return null;
+        }
+        return +num;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./js/scripts.js" defer></script> -->
+    <!--defer - запускает код в js после прогрузки всей страницы-->
+
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //       Напишите if..else, соответствующий следующему switch:
+
+      // switch (browser) {
+      //   case 'Edge':
+      //     alert( "You've got the Edge!" );
+      //     break;
+
+      //   case 'Chrome':
+      //   case 'Firefox':
+      //   case 'Safari':
+      //   case 'Opera':
+      //     alert( 'Okay we support these browsers too' );
+      //     break;
+
+      //   default:
+      //     alert( 'We hope that this page looks ok!' );
+      // }
+      let browser = prompt("Which browser do you use?", "Edge");
+      if (browser == "Edge") {
+        alert("You've got the Edge!");
+      } else if (
+        browser == "Chrome" ||
+        browser == "Firefox" ||
+        browser == "Safari" ||
+        browser == "Opera"
+      ) {
+        alert("Okay we support these browsers too");
+      } else {
+        alert("We hope that this page looks ok!");
+      }
+    </script>
+  </body>
+</html>

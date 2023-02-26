@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./js/scripts.js" defer></script> -->
+    <!--defer - запускает код в js после прогрузки всей страницы-->
+
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // Напишите функцию pow(x,n), которая возводит x в степень n и возвращает результат.
+
+      // pow(3, 2) = 3 * 3 = 9
+      // pow(3, 3) = 3 * 3 * 3 = 27
+      // pow(1, 100) = 1 * 1 * ...* 1 = 1
+      // Создайте страницу, которая запрашивает x и n, а затем выводит результат pow(x,n).
+      // P.S. В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше.
+
+      function pow(x, n) {
+        if (!isNaN(x) && !isNaN(n)) {
+          if (n < 1) {
+            return `${n} - не натуральное число`;
+          }
+          return x ** n;
+        } else {
+          return "Вы ввели не числа";
+        }
+      }
+
+      let x = prompt("Введите число", 3);
+      let n = prompt("Введите степень", 2);
+
+      alert(pow(x, n));
+    </script>
+  </body>
+</html>
