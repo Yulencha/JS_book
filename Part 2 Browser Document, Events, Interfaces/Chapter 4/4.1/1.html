@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <select id="genres">
+      <option value="rock">Рок</option>
+      <option value="blues" selected>Блюз</option>
+    </select>
+    <script>
+      let activeElement = genres.options[genres.selectedIndex];
+      alert(activeElement.value);
+      alert(activeElement.text);
+
+      let option = new Option("Классика", "classic");
+      genres.append(option);
+      option.selected = true;
+    </script>
+  </body>
+</html>
